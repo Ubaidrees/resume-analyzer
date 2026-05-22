@@ -1,8 +1,2 @@
-[phases.setup]
-nixPkgs = ["python313", "pip"]
-
-[phases.install]
-cmds = ["pip install -r requirements.txt"]
-
 [start]
-cmd = "gunicorn app:app"
+cmd = "pip install -r requirements.txt && gunicorn app:app"
